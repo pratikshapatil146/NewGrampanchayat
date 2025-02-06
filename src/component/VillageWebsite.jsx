@@ -29,13 +29,13 @@ export default function VillageWebsite() {
         { src: '/images/library.jpg', caption: 'Laibrary of Rampur' },
     ];
 
-    // useEffect(() => {
-    //     const interval = setInterval(() => {
-    //         setCurrentImageIndex(prevIndex => (prevIndex + 1) % images.length);
-    //     }, 2000); // Change image every 2 seconds
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentImageIndex(prevIndex => (prevIndex + 1) % images.length);
+        }, 2000); // Change image every 2 seconds
 
-    //     return () => clearInterval(interval);
-    // }, []);
+        return () => clearInterval(interval);
+    }, [images.length]);
 
 
     const renderContent = () => {
