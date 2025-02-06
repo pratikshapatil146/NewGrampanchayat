@@ -209,6 +209,12 @@
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.card ul {
+
+        list-style-type: none;
+        text-align: center;
+}
+
 /* Section */
 .section {
         padding: 20px;
@@ -235,7 +241,7 @@
 
 .boardmembersSection {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         margin-top: 2rem;
         gap: 1rem;
 }
